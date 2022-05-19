@@ -1,0 +1,926 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+//imports//
+ @import "variables/fuentes";
+ @import "variables/variables"; 
+    //--------//
+    //-----------------------Inicio - mobile --------------------//
+    //header//
+.banner{
+    display: flex;
+    justify-content: space-between;
+    background-color: nth($colores, 5 );
+    align-items: center;
+   
+    h1{
+        color: nth($colores, 1 );
+        font-family: fuentehuno;
+    }
+    a{
+      text-decoration: none;
+      margin: 1rem;
+      background-color: nth($colores, 3 );
+      color: nth($colores, 1 );
+      padding: 0.4rem;
+      border-radius: 10px;
+      border-style: solid; 
+
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        a{
+             text-decoration: none;
+             margin: 0rem;
+             background-color: nth($colores, 5 );
+             border-style: none;
+             padding: 0rem;
+        }
+         img{
+              height: 60px;
+              margin: 0.1rem;
+        }
+    }
+}
+//menu nav//
+.navUno{
+ nav{
+    background-color: nth($colores, 1 );
+    ul {
+    margin-right: 2rem;
+    display: grid;
+    list-style: none;
+    justify-content: space;
+    grid-template-areas: "inicio presupuesto"
+                         "mercadoruedas registro"
+                         "configuracion configuracion";
+                         .inicio{grid-area: inicio;}
+                         .presupuesto{grid-area: presupuesto;}
+                         .mercadoruedas{grid-area: mercadoruedas;}
+                         .registro{grid-area: registro;}
+                         .configuracion{grid-area: configuracion;}
+                                     li{
+                                         display: inline-block;
+                                         background-color: black ;
+                                         margin: 0.3rem;
+                                         border-style: solid;
+                                         border-color: nth($colores, 4 );
+                                         border-radius: 10px;
+                                         text-align: center;
+                                         padding: 0.3rem;
+                                         font-family: fuenteli;
+                                      a {
+                                          text-decoration: none;
+                                          color: nth($colores, 4 );
+                                          }  
+                                       }
+                                   }
+                               }
+                            }
+//--header--//
+//body//
+.carusel{
+    display: none;
+}
+body{
+    
+    background-color: rgb(49, 49, 49);
+}
+.intro{
+    h2{
+        background-color: nth($colores, 2 );
+        margin: 1rem;
+        padding: 0.3rem;
+        color: nth($colores, 1 );
+        text-align: center;
+        border-radius: 10px
+    }
+
+}
+.video{
+    display: flex;
+    justify-content: center;
+    
+    iframe{
+        align-items: center;
+        height: 11rem;
+        width: 20rem;
+    }
+}
+.primerTexto{
+    
+    margin: 1rem;
+    h2{
+        background-color: nth($colores, 2 );
+        margin: 0.2rem;
+        padding: 0.3rem;
+        color: nth($colores, 1 );
+        text-align: center;
+        border-radius: 10px;
+        
+    }
+     h5{
+        margin: 1rem;
+        color: nth($colores, 4 );
+        text-align: left;
+    }
+}
+.segundoTexto{
+    h2{
+        background-color: nth($colores, 2 );
+        margin: 1rem;
+        padding: 0.3rem;
+        color: nth($colores, 1 );
+        text-align: center;
+        border-radius: 10px;
+
+    }
+    h5{
+        color: nth($colores, 4 );
+        text-align: left;
+        margin: 0.5rem 2rem 0.5rem 2rem;
+    }
+}
+                        //footer//
+.atencion{
+    display: grid;
+         h2{
+             background-color: nth($colores, 2 );
+             margin: 1rem;
+             padding: 0.3rem;
+             color: nth($colores, 1 );
+             text-align: center;
+             border-radius: 10px;
+        }
+    .what
+    {
+        display: flex;
+        margin-left: 2rem ;
+        align-items: center;
+         h4{
+             color: nth($colores, 4 );
+            margin: 1rem;
+         }
+        }
+    .insta{
+        display: flex;
+        margin-left: 2rem ;
+        align-items: center;
+         a{
+             color: nth($colores, 4 );
+             margin: 1rem;
+             padding: 0.3rem;
+             text-decoration: none;
+             border-style: solid;
+             border-radius: 10px;
+         }
+      } 
+    .face{
+        display: flex;
+        margin-left: 2rem ;
+        align-items: center;
+         a{
+             text-decoration: none;
+             color: nth($colores , 4 );
+             margin: 1rem;
+             padding: 0.3rem;
+             border-style: solid;
+             border-radius: 10px;
+         }
+    } 
+    .you{
+        display: flex;
+        margin-left: 2rem ;
+        align-items: center;
+         a{
+            text-decoration: none;
+            color: nth($colores, 4 );
+            margin: 1rem;
+            padding: 0.3rem;
+            border-style: solid;
+            border-radius: 10px;
+         }
+    } 
+}
+    
+    //footer//
+    //--body--//
+    //---------------------fin Inicio - mobile--------------------//
+    //---------------------inicio-tablet--------------------------//
+    @media only screen and (min-width: 700px){
+    .navUno{
+    nav{
+            background-color: nth($colores, 1 );         
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+                                             li{
+                                                 background-color: black ;
+                                                 margin: 0.5rem; 
+                                                 border-style: solid;
+                                                 border-color: nth($colores, 4 );
+                                                 border-radius: 10px;
+                                                 text-align: center;
+                                                 padding: 0.5rem;
+                                                 font-family: fuenteli;
+                                              a {
+                                                  text-decoration: none;
+                                                  color: nth($colores, 4 );
+                                              }  
+                                            }
+                                        }
+                                    }
+                                } 
+                                    .carusel{
+                                        display: none;} 
+                                    .video{
+                                       display: flex;
+                                       justify-content: center;
+                                       margin: 0px;
+                                       padding: 0px;;
+                                       grid-area: video;
+                           
+                                    iframe{
+                                                align-items: center;
+                                                height: 15rem;
+                                                width: 30rem;
+                                                margin: 0.5rem;
+                                                }
+                                               }
+                                    .responsive{
+                                                display: grid;
+                                                grid-template-areas: "whatsapp ig"
+                                                                     "facebook youtube";
+                                               }    
+                                }
+         //-----------------------fin inicio tablet------------------//     
+         //-----------------------inico full screen------------------// 
+                               
+@media only screen and (min-width: 1024px){
+    .navUno{
+        nav{
+                background-color: nth($colores, 1 );         
+            ul {
+                display: flex;
+                list-style: none;
+                justify-content: center;
+                                                 li{
+                                                     background-color: black ;
+                                                     margin: 0.3rem 1rem ; 
+                                                     border-style: solid;
+                                                     border-color: nth($colores, 4 );
+                                                     border-radius: 10px;
+                                                     text-align: center;
+                                                     padding: 0.3rem 2rem;
+                                                     font-family: fuenteli;
+                                                  a {
+                                                      text-decoration: none;
+                                                      color: nth($colores, 4 );
+                                                  }  
+                                                }
+                                            }
+                                        }
+                                    } 
+    
+.mainInicio{
+    display: grid;
+    grid-template-areas: "carusel carusel"
+                         "primer video"
+                         "segundo segundo";
+
+     
+        .video{
+            display: flex;
+            justify-content: center;
+            margin: 0px;
+            padding: 0px;
+            grid-area: video;
+            
+            iframe{
+                align-items: center;
+                height: 25rem;
+                width: 40rem;
+                margin-top: 3rem;
+            }
+        }                        
+
+    .carusel{
+        display: grid;
+        grid-area: carusel;
+        margin: 3rem;
+        img{
+            height: 25rem;
+            width: 50rem;
+        }
+    }
+    .primerTexto{
+        grid-area: primer;
+        margin-right: 3rem;
+        margin-left: 3rem;
+         h3{ text-align: left; 
+        }
+    }
+    .segundoTexto{
+        grid-area: segundo;
+        margin: 2rem;
+        h3{
+            text-align: center;
+        }
+    }
+}
+    .responsive{
+       display: grid;
+       grid-template-areas: "whatsapp ig facebook youtube";
+      }
+   }
+   //--------------------presupuesto/mercado ruedas-----------------//
+   .bodyPresupuesto{
+   .navDos{
+        ul{ display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 1rem;
+            margin-right: 1.5rem;
+              li{
+                display: inline-block;
+                background-color: nth($colores, 1 ) ;
+                border-style: solid;
+                border-color: nth($colores,5 );
+                border-radius: 10px;
+                text-align: center;
+                padding: 0.5rem 1rem 0.5rem 1rem;
+                margin: 0.5rem;
+                font-family: fuenteli;
+                a{
+                    text-decoration: none;
+                    color: nth($colores, 5 );
+                }
+              }    
+           }
+        }
+        //------body------//
+        .mercadoH{
+            display: none;
+        }
+          .textoUno{ 
+              h2{                 
+                background-color: nth($colores, 1 );
+                color: nth($colores ,5);
+                margin: 1rem;
+                padding: 0.3rem;
+                border-radius: 10px;
+                border-style: solid;
+                border-color: black;
+                text-align: center;
+              }
+              p{
+                background-color: nth($colores, 2 );
+                color: nth($colores, 4);
+                margin: 2rem;
+                padding: 0.5rem;
+                border-radius: 10px;
+              }
+
+          }
+        .pasoPaso{
+            h3{
+                background-color: nth($colores, 1 );
+                color: nth($colores ,5);
+                margin: 1rem;
+                padding: 0.3rem;
+                border-radius: 10px;
+                border-style: solid;
+                border-color: black;
+                text-align: center;
+            }
+        }
+          .pasos{
+                h3{
+                    background-color: nth($colores, 2 );
+                    margin: 1rem;
+                    padding: 0.3rem;
+                    color: nth($colores, 1 );
+                    text-align: center;
+                    border-radius: 10px;
+                }
+                p{
+                    color: nth($colores, 6 );
+                    background-color: nth($colores, 2 );
+                    margin: 1rem;
+                    padding: 0.5rem;
+                    border-radius: 10px;
+                }
+              .parrafo{
+                    background-color: nth($colores, 6 );
+                    margin: 1rem;
+                    border-radius: 10px;
+              }
+              .img{
+                    display: flex;
+                    justify-content: center;
+                    margin: 1rem;
+                    img{
+                       width: 25rem;
+                       height: 12.5rem;
+                 }
+             }
+          }
+      }
+      @media only screen and (min-width: 700px){
+        .mercadoH{
+            display: none;
+        }
+        .bodyPresupuesto{
+        .navDos{
+            ul{ display: flex;
+                justify-content: center;
+                list-style: none;
+                margin-top: 1rem;
+                margin-right: 1.5rem;
+                  li{
+                    display: inline-block;
+                    background-color: nth($colores, 1 ) ;
+                    border-style: solid;
+                    border-color: nth($colores, 5 );
+                    border-radius: 10px;
+                    text-align: center;
+                    padding: 0.5rem 5rem 0.5rem 5rem;
+                    margin: 0.5rem;
+                    font-family: fuenteli;
+                    a{
+                        text-decoration: none;
+                        color: nth($colores, 5 );
+                    }
+                  }    
+               }
+            }
+        .pasos{
+            align-items: center;
+            display: grid;
+            grid-template-areas: "pasos pasos" 
+                                 "parrafo img";
+            h3{
+                grid-area: pasos;
+                background-color: nth($colores, 2 );
+                margin: 1rem;
+                padding: 0.3rem;
+                color: nth($colores, 1 );
+                text-align: center;
+                border-radius: 10px;
+            }
+            p{
+                grid-area: parrafo;
+                color: nth($colores, 6 );
+                background-color: nth($colores, 2 );
+                margin: 1rem;
+                padding: 00.5rem;
+                border-radius: 10px;
+            }
+          .img{
+                grid-area: img;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 1rem;
+                img{
+                   width: 25rem;
+                   height: 12.5rem;
+             }
+         }
+      }
+    }
+}
+@media only screen and (min-width: 1024px){
+    .bodyPresupuesto{
+        .navDos{
+            ul{ display: flex;
+                justify-content: center;
+                list-style: none;
+                margin-top: 1rem;
+                margin-right: 1.5rem;
+                  li{
+                    display: inline-block;
+                    background-color: nth($colores, 1 ) ;
+                    border-style: solid;
+                    border-color: nth($colores, 5 );
+                    border-radius: 10px;
+                    text-align: center;
+                    padding: 0.5rem 8rem 0.5rem 8rem;
+                    margin: 0.5rem;
+                    font-family: fuenteli;
+                    a{
+                        text-decoration: none;
+                        color: nth($colores, 5 );
+                    }
+                  }    
+               }
+            }
+    .presuRsp{
+        display: grid;
+        grid-template-areas: "pasos img" 
+                             "parrafo img"}
+    .pasos{
+        align-items: center;
+        margin: 1rem;
+        display: grid;
+        grid-template-areas: "pasos img" 
+                             "parrafo img";
+        h3{
+            grid-area: pasos;
+            background-color: nth($colores, 2 );
+            margin: 0.5rem;
+            padding: 0.3rem;
+            color: nth($colores, 1 );
+            text-align: center;
+            border-radius: 10px;
+        }
+        p{
+            text-align: left;
+            background-color: nth($colores,2);
+            grid-area: parrafo;
+            color:nth($colores,6);
+            padding: 0.5rem;
+            margin: 1rem;
+            margin-top: 0rem;
+
+        }
+      .img{
+            grid-area: img;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem;
+            margin-top: 3rem;
+            img{
+               width: 25rem;
+               height: 12.5rem;    
+     }
+    }
+   }
+  }
+ .mercadoRuedas{
+     justify-content: center;
+     .mercadoH{
+         display: flex;
+         justify-content: center; 
+     h2{
+        background-color: nth($colores,6 );
+        color: nth($colores ,5);
+        margin-top: 2rem;
+        padding: 0.3rem 6rem 0.3rem 6rem;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: nth($colores,5);
+     }
+}
+     .carusel{
+         display: block;
+            margin-top: 1rem;
+            margin: 3rem;
+            img{
+                height: 25rem;
+                width: 50rem;
+            }
+        }
+     }
+    }
+//---------------------------------registro-----------------------------//
+.bodyRegistro{
+.vidRegis{
+    img{
+        display: none;
+    }
+}
+.pasoPaso{
+    justify-content: center;
+    display: flex;
+    h3{
+        background-color: nth($colores ,1);
+        color:nth($colores ,5);
+        margin: 1rem;
+        padding: 0.3rem;
+        text-align: center;
+        border-radius: 10px;
+    }
+}
+  .pasos{
+        h4{
+            background-color: nth($colores, 2 );
+            margin: 1rem;
+            padding: 0.3rem;
+            color: nth($colores, 1 );
+            text-align: center;
+            border-radius: 10px;
+        }
+        p{
+            margin: 1rem;
+            padding: 0.5rem;
+            border-radius: 10px;
+            color: nth($colores,6);
+            background-color:nth($colores,2) ;
+        }
+    
+      .img{
+            display: flex;
+            justify-content: center;
+            margin: 1rem;
+            img{
+               width: 25rem;
+               height: 12.5rem;
+         }
+     }
+  }
+}
+  @media only screen and (min-width: 700px){
+
+ 
+    .bodyRegistro{
+        .vidRegis{
+            img{
+                display: none;
+            }
+        }
+        .comoRegis{
+            background-color: nth($colores, 3 );
+            h3{
+                color: nth($colores, 1 );
+            }
+        }      
+    .pasos{
+        align-items: center;
+        display: grid;
+        grid-template-areas: "pasos pasos" 
+                             "parrafo img";
+        h4{
+            grid-area: pasos;
+            background-color: nth($colores, 2 );
+            margin: 1rem;
+            padding: 0.3rem;
+            color: nth($colores, 1 );
+            text-align: center;
+            border-radius: 10px;
+        }
+        p{
+            grid-area: parrafo;
+            background-color: nth($colores, 2 );
+            margin: 1rem;
+            padding: 00.5rem;
+            border-radius: 10px;
+        }
+      .img{
+            grid-area: img;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem;
+            img{
+               width: 25rem;
+               height: 12.5rem;
+     }
+    }
+  }
+ }
+}
+@media only screen and (min-width: 1024px){
+    .bodyRegistro{ 
+     .vidRegis{
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         img{
+             display: inline-block;
+            height: 21rem;
+            width: 30rem;
+         }
+         .video{
+             iframe{
+                 height: 21rem;
+                 width: 30rem;
+             }
+         }
+     }
+      
+    .pasos{
+        align-items: center;
+        margin: 1rem;
+        display: grid;
+        grid-template-areas: "pasos img" 
+                             "parrafo img";
+        h3{
+            grid-area: pasos;
+            background-color: nth($colores, 2 );
+            margin: 0.5rem;
+            padding: 0.3rem;
+            color: nth($colores, 1 );
+            text-align: center;
+            border-radius: 10px;
+        }
+        p{
+            text-align: left;
+            background-color: nth($colores,2);
+            grid-area: parrafo;
+            color:nth($colores,6);
+            padding: 0.5rem;
+            margin: 1rem;
+            margin-top: 0rem;
+
+        }
+      .img{
+            grid-area: img;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem;
+            margin-top: 3rem;
+            img{
+               width: 25rem;
+               height: 12.5rem;    
+     }
+    }
+   }
+  }
+}
+//---------------------config------------------------------//
+.bodyConfig{
+    .configIntro{
+        h2{
+        text-align: center;
+        background-color: nth($colores,2 );
+        color: nth($colores ,1);
+        margin: 1rem;
+        padding: 0.3rem;
+        border-radius: 10px;
+     }
+   }
+    .parrafoConfig{
+       h2{
+        text-align: center;
+        background-color: nth($colores,2 );
+        color: nth($colores ,1);
+        margin: 1rem;
+        padding: 0.3rem;
+        border-radius: 10px;}
+        p{
+            text-align: left;
+            background-color: nth($colores,2);
+            grid-area: parrafo;
+            color:nth($colores,6);
+            padding: 0.5rem;
+            margin: 1rem;
+            margin-top: 0rem;
+            border-radius: 10px;
+     }
+   }
+    .pasoPaso{
+        justify-content: center;
+        display: flex;
+        h3{
+            background-color: nth($colores ,1);
+            color:nth($colores ,5);
+            margin: 1rem;
+            padding: 0.3rem;
+            text-align: center;
+            border-radius: 10px;
+        }
+    }
+      .pasos{
+            h4{
+                background-color: nth($colores, 2 );
+                margin: 1rem;
+                padding: 0.3rem;
+                color: nth($colores, 1 );
+                text-align: center;
+                border-radius: 10px;
+            }
+            p{
+                margin: 1rem;
+                padding: 0.5rem;
+                border-radius: 10px;
+                color: nth($colores,6);
+                background-color:nth($colores,2) ;
+            }
+        
+          .img{
+                display: flex;
+                justify-content: center;
+                margin: 1rem;
+                img{
+                   width: 25rem;
+                   height: 12.5rem;
+             }
+         }
+      }
+    }
+    @media only screen and (min-width: 700px){
+
+ 
+        .bodyConfig{
+        .pasos{
+            align-items: center;
+            display: grid;
+            grid-template-areas: "pasos pasos" 
+                                 "parrafo img";
+            h4{
+                grid-area: pasos;
+                background-color: nth($colores, 2 );
+                margin: 1rem;
+                padding: 0.3rem;
+                color: nth($colores, 1 );
+                text-align: center;
+                border-radius: 10px;
+            }
+            p{
+                grid-area: parrafo;
+                background-color: nth($colores, 2 );
+                margin: 1rem;
+                padding: 00.5rem;
+                border-radius: 10px;
+            }
+          .img{
+                grid-area: img;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 1rem;
+                img{
+                   width: 25rem;
+                   height: 12.5rem;
+         }
+        }
+      }
+     }
+    }
+    @media only screen and (min-width: 1024px){
+        .bodyConfig{ 
+         .configRsp{
+             justify-content: center;
+             display: grid;
+             grid-template-areas: "sucursales video"
+                                  "parrafo video";
+             .parrafoConfig{
+                 grid-area: sucursales;
+                 h2{
+                     padding: 0.5rem;
+                 }
+                 p{
+                     margin: 2rem;
+                     align-items: center;
+                 }
+             }
+             .configIntro{  
+                 grid-area: video;
+                 h2{
+                     padding: 0.5rem;
+                 }
+                 .video{
+                     align-items: center;
+                     margin: 2rem;
+                 }
+                      
+             }
+          }
+          
+        .pasos{
+            align-items: center;
+            margin: 1rem;
+            display: grid;
+            grid-template-areas: "pasos img" 
+                                 "parrafo img";
+            h3{
+                grid-area: pasos;
+                background-color: nth($colores, 2 );
+                margin: 0.5rem;
+                padding: 0.3rem;
+                color: nth($colores, 1 );
+                text-align: center;
+                border-radius: 10px;
+            }
+            p{
+                text-align: left;
+                background-color: nth($colores,2);
+                grid-area: parrafo;
+                color:nth($colores,6);
+                padding: 0.5rem;
+                margin: 1rem;
+                margin-top: 0rem;
+    
+            }
+          .img{
+                grid-area: img;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 1rem;
+                margin-top: 3rem;
+                img{
+                   width: 25rem;
+                   height: 12.5rem;    
+         }
+        }
+       }
+      }
+    }

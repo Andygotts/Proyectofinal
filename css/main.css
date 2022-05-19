@@ -1,0 +1,723 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: fuentehuno;
+  src: url(../fuentes/PermanentMarker-Regular.ttf); }
+
+@font-face {
+  font-family: fuenteli;
+  src: url(../fuentes/EBGaramond-BoldItalic.ttf); }
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  align-items: center; }
+  .banner h1 {
+    color: #ffd000;
+    font-family: fuentehuno; }
+  .banner a {
+    text-decoration: none;
+    margin: 1rem;
+    background-color: #313131;
+    color: #ffd000;
+    padding: 0.4rem;
+    border-radius: 10px;
+    border-style: solid; }
+  .banner .logo {
+    display: flex;
+    align-items: center; }
+    .banner .logo a {
+      text-decoration: none;
+      margin: 0rem;
+      background-color: black;
+      border-style: none;
+      padding: 0rem; }
+    .banner .logo img {
+      height: 60px;
+      margin: 0.1rem; }
+
+.navUno nav {
+  background-color: #ffd000; }
+  .navUno nav ul {
+    margin-right: 2rem;
+    display: grid;
+    list-style: none;
+    justify-content: space;
+    grid-template-areas: "inicio presupuesto" "mercadoruedas registro" "configuracion configuracion"; }
+    .navUno nav ul .inicio {
+      grid-area: inicio; }
+    .navUno nav ul .presupuesto {
+      grid-area: presupuesto; }
+    .navUno nav ul .mercadoruedas {
+      grid-area: mercadoruedas; }
+    .navUno nav ul .registro {
+      grid-area: registro; }
+    .navUno nav ul .configuracion {
+      grid-area: configuracion; }
+    .navUno nav ul li {
+      display: inline-block;
+      background-color: black;
+      margin: 0.3rem;
+      border-style: solid;
+      border-color: white;
+      border-radius: 10px;
+      text-align: center;
+      padding: 0.3rem;
+      font-family: fuenteli; }
+      .navUno nav ul li a {
+        text-decoration: none;
+        color: white; }
+
+.carusel {
+  display: none; }
+
+body {
+  background-color: #313131; }
+
+.intro h2 {
+  background-color: rgba(0, 0, 0, 0.644);
+  margin: 1rem;
+  padding: 0.3rem;
+  color: #ffd000;
+  text-align: center;
+  border-radius: 10px; }
+
+.video {
+  display: flex;
+  justify-content: center; }
+  .video iframe {
+    align-items: center;
+    height: 11rem;
+    width: 20rem; }
+
+.primerTexto {
+  margin: 1rem; }
+  .primerTexto h2 {
+    background-color: rgba(0, 0, 0, 0.644);
+    margin: 0.2rem;
+    padding: 0.3rem;
+    color: #ffd000;
+    text-align: center;
+    border-radius: 10px; }
+  .primerTexto h5 {
+    margin: 1rem;
+    color: white;
+    text-align: left; }
+
+.segundoTexto h2 {
+  background-color: rgba(0, 0, 0, 0.644);
+  margin: 1rem;
+  padding: 0.3rem;
+  color: #ffd000;
+  text-align: center;
+  border-radius: 10px; }
+
+.segundoTexto h5 {
+  color: white;
+  text-align: left;
+  margin: 0.5rem 2rem 0.5rem 2rem; }
+
+.atencion {
+  display: grid; }
+  .atencion h2 {
+    background-color: rgba(0, 0, 0, 0.644);
+    margin: 1rem;
+    padding: 0.3rem;
+    color: #ffd000;
+    text-align: center;
+    border-radius: 10px; }
+  .atencion .what {
+    display: flex;
+    margin-left: 2rem;
+    align-items: center; }
+    .atencion .what h4 {
+      color: white;
+      margin: 1rem; }
+  .atencion .insta {
+    display: flex;
+    margin-left: 2rem;
+    align-items: center; }
+    .atencion .insta a {
+      color: white;
+      margin: 1rem;
+      padding: 0.3rem;
+      text-decoration: none;
+      border-style: solid;
+      border-radius: 10px; }
+  .atencion .face {
+    display: flex;
+    margin-left: 2rem;
+    align-items: center; }
+    .atencion .face a {
+      text-decoration: none;
+      color: white;
+      margin: 1rem;
+      padding: 0.3rem;
+      border-style: solid;
+      border-radius: 10px; }
+  .atencion .you {
+    display: flex;
+    margin-left: 2rem;
+    align-items: center; }
+    .atencion .you a {
+      text-decoration: none;
+      color: white;
+      margin: 1rem;
+      padding: 0.3rem;
+      border-style: solid;
+      border-radius: 10px; }
+
+@media only screen and (min-width: 700px) {
+  .navUno nav {
+    background-color: #ffd000; }
+    .navUno nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: center; }
+      .navUno nav ul li {
+        background-color: black;
+        margin: 0.5rem;
+        border-style: solid;
+        border-color: white;
+        border-radius: 10px;
+        text-align: center;
+        padding: 0.5rem;
+        font-family: fuenteli; }
+        .navUno nav ul li a {
+          text-decoration: none;
+          color: white; }
+  .carusel {
+    display: none; }
+  .video {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    grid-area: video; }
+    .video iframe {
+      align-items: center;
+      height: 15rem;
+      width: 30rem;
+      margin: 0.5rem; }
+  .responsive {
+    display: grid;
+    grid-template-areas: "whatsapp ig" "facebook youtube"; } }
+
+@media only screen and (min-width: 1024px) {
+  .navUno nav {
+    background-color: #ffd000; }
+    .navUno nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: center; }
+      .navUno nav ul li {
+        background-color: black;
+        margin: 0.3rem 1rem;
+        border-style: solid;
+        border-color: white;
+        border-radius: 10px;
+        text-align: center;
+        padding: 0.3rem 2rem;
+        font-family: fuenteli; }
+        .navUno nav ul li a {
+          text-decoration: none;
+          color: white; }
+  .mainInicio {
+    display: grid;
+    grid-template-areas: "carusel carusel" "primer video" "segundo segundo"; }
+    .mainInicio .video {
+      display: flex;
+      justify-content: center;
+      margin: 0px;
+      padding: 0px;
+      grid-area: video; }
+      .mainInicio .video iframe {
+        align-items: center;
+        height: 25rem;
+        width: 40rem;
+        margin-top: 3rem; }
+    .mainInicio .carusel {
+      display: grid;
+      grid-area: carusel;
+      margin: 3rem; }
+      .mainInicio .carusel img {
+        height: 25rem;
+        width: 50rem; }
+    .mainInicio .primerTexto {
+      grid-area: primer;
+      margin-right: 3rem;
+      margin-left: 3rem; }
+      .mainInicio .primerTexto h3 {
+        text-align: left; }
+    .mainInicio .segundoTexto {
+      grid-area: segundo;
+      margin: 2rem; }
+      .mainInicio .segundoTexto h3 {
+        text-align: center; }
+  .responsive {
+    display: grid;
+    grid-template-areas: "whatsapp ig facebook youtube"; } }
+
+.bodyPresupuesto .navDos ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 1rem;
+  margin-right: 1.5rem; }
+  .bodyPresupuesto .navDos ul li {
+    display: inline-block;
+    background-color: #ffd000;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 0.5rem;
+    font-family: fuenteli; }
+    .bodyPresupuesto .navDos ul li a {
+      text-decoration: none;
+      color: black; }
+
+.bodyPresupuesto .mercadoH {
+  display: none; }
+
+.bodyPresupuesto .textoUno h2 {
+  background-color: #ffd000;
+  color: black;
+  margin: 1rem;
+  padding: 0.3rem;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  text-align: center; }
+
+.bodyPresupuesto .textoUno p {
+  background-color: rgba(0, 0, 0, 0.644);
+  color: white;
+  margin: 2rem;
+  padding: 0.5rem;
+  border-radius: 10px; }
+
+.bodyPresupuesto .pasoPaso h3 {
+  background-color: #ffd000;
+  color: black;
+  margin: 1rem;
+  padding: 0.3rem;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  text-align: center; }
+
+.bodyPresupuesto .pasos h3 {
+  background-color: rgba(0, 0, 0, 0.644);
+  margin: 1rem;
+  padding: 0.3rem;
+  color: #ffd000;
+  text-align: center;
+  border-radius: 10px; }
+
+.bodyPresupuesto .pasos p {
+  color: #ffe260;
+  background-color: rgba(0, 0, 0, 0.644);
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px; }
+
+.bodyPresupuesto .pasos .parrafo {
+  background-color: #ffe260;
+  margin: 1rem;
+  border-radius: 10px; }
+
+.bodyPresupuesto .pasos .img {
+  display: flex;
+  justify-content: center;
+  margin: 1rem; }
+  .bodyPresupuesto .pasos .img img {
+    width: 25rem;
+    height: 12.5rem; }
+
+@media only screen and (min-width: 700px) {
+  .mercadoH {
+    display: none; }
+  .bodyPresupuesto .navDos ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+    margin-right: 1.5rem; }
+    .bodyPresupuesto .navDos ul li {
+      display: inline-block;
+      background-color: #ffd000;
+      border-style: solid;
+      border-color: black;
+      border-radius: 10px;
+      text-align: center;
+      padding: 0.5rem 5rem 0.5rem 5rem;
+      margin: 0.5rem;
+      font-family: fuenteli; }
+      .bodyPresupuesto .navDos ul li a {
+        text-decoration: none;
+        color: black; }
+  .bodyPresupuesto .pasos {
+    align-items: center;
+    display: grid;
+    grid-template-areas: "pasos pasos"  "parrafo img"; }
+    .bodyPresupuesto .pasos h3 {
+      grid-area: pasos;
+      background-color: rgba(0, 0, 0, 0.644);
+      margin: 1rem;
+      padding: 0.3rem;
+      color: #ffd000;
+      text-align: center;
+      border-radius: 10px; }
+    .bodyPresupuesto .pasos p {
+      grid-area: parrafo;
+      color: #ffe260;
+      background-color: rgba(0, 0, 0, 0.644);
+      margin: 1rem;
+      padding: 00.5rem;
+      border-radius: 10px; }
+    .bodyPresupuesto .pasos .img {
+      grid-area: img;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem; }
+      .bodyPresupuesto .pasos .img img {
+        width: 25rem;
+        height: 12.5rem; } }
+
+@media only screen and (min-width: 1024px) {
+  .bodyPresupuesto .navDos ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+    margin-right: 1.5rem; }
+    .bodyPresupuesto .navDos ul li {
+      display: inline-block;
+      background-color: #ffd000;
+      border-style: solid;
+      border-color: black;
+      border-radius: 10px;
+      text-align: center;
+      padding: 0.5rem 8rem 0.5rem 8rem;
+      margin: 0.5rem;
+      font-family: fuenteli; }
+      .bodyPresupuesto .navDos ul li a {
+        text-decoration: none;
+        color: black; }
+  .bodyPresupuesto .presuRsp {
+    display: grid;
+    grid-template-areas: "pasos img"  "parrafo img"; }
+  .bodyPresupuesto .pasos {
+    align-items: center;
+    margin: 1rem;
+    display: grid;
+    grid-template-areas: "pasos img"  "parrafo img"; }
+    .bodyPresupuesto .pasos h3 {
+      grid-area: pasos;
+      background-color: rgba(0, 0, 0, 0.644);
+      margin: 0.5rem;
+      padding: 0.3rem;
+      color: #ffd000;
+      text-align: center;
+      border-radius: 10px; }
+    .bodyPresupuesto .pasos p {
+      text-align: left;
+      background-color: rgba(0, 0, 0, 0.644);
+      grid-area: parrafo;
+      color: #ffe260;
+      padding: 0.5rem;
+      margin: 1rem;
+      margin-top: 0rem; }
+    .bodyPresupuesto .pasos .img {
+      grid-area: img;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem;
+      margin-top: 3rem; }
+      .bodyPresupuesto .pasos .img img {
+        width: 25rem;
+        height: 12.5rem; }
+  .mercadoRuedas {
+    justify-content: center; }
+    .mercadoRuedas .mercadoH {
+      display: flex;
+      justify-content: center; }
+      .mercadoRuedas .mercadoH h2 {
+        background-color: #ffe260;
+        color: black;
+        margin-top: 2rem;
+        padding: 0.3rem 6rem 0.3rem 6rem;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: black; }
+    .mercadoRuedas .carusel {
+      display: block;
+      margin-top: 1rem;
+      margin: 3rem; }
+      .mercadoRuedas .carusel img {
+        height: 25rem;
+        width: 50rem; } }
+
+.bodyRegistro .vidRegis img {
+  display: none; }
+
+.bodyRegistro .pasoPaso {
+  justify-content: center;
+  display: flex; }
+  .bodyRegistro .pasoPaso h3 {
+    background-color: #ffd000;
+    color: black;
+    margin: 1rem;
+    padding: 0.3rem;
+    text-align: center;
+    border-radius: 10px; }
+
+.bodyRegistro .pasos h4 {
+  background-color: rgba(0, 0, 0, 0.644);
+  margin: 1rem;
+  padding: 0.3rem;
+  color: #ffd000;
+  text-align: center;
+  border-radius: 10px; }
+
+.bodyRegistro .pasos p {
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  color: #ffe260;
+  background-color: rgba(0, 0, 0, 0.644); }
+
+.bodyRegistro .pasos .img {
+  display: flex;
+  justify-content: center;
+  margin: 1rem; }
+  .bodyRegistro .pasos .img img {
+    width: 25rem;
+    height: 12.5rem; }
+
+@media only screen and (min-width: 700px) {
+  .bodyRegistro .vidRegis img {
+    display: none; }
+  .bodyRegistro .comoRegis {
+    background-color: #313131; }
+    .bodyRegistro .comoRegis h3 {
+      color: #ffd000; }
+  .bodyRegistro .pasos {
+    align-items: center;
+    display: grid;
+    grid-template-areas: "pasos pasos"  "parrafo img"; }
+    .bodyRegistro .pasos h4 {
+      grid-area: pasos;
+      background-color: rgba(0, 0, 0, 0.644);
+      margin: 1rem;
+      padding: 0.3rem;
+      color: #ffd000;
+      text-align: center;
+      border-radius: 10px; }
+    .bodyRegistro .pasos p {
+      grid-area: parrafo;
+      background-color: rgba(0, 0, 0, 0.644);
+      margin: 1rem;
+      padding: 00.5rem;
+      border-radius: 10px; }
+    .bodyRegistro .pasos .img {
+      grid-area: img;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem; }
+      .bodyRegistro .pasos .img img {
+        width: 25rem;
+        height: 12.5rem; } }
+
+@media only screen and (min-width: 1024px) {
+  .bodyRegistro .vidRegis {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .bodyRegistro .vidRegis img {
+      display: inline-block;
+      height: 21rem;
+      width: 30rem; }
+    .bodyRegistro .vidRegis .video iframe {
+      height: 21rem;
+      width: 30rem; }
+  .bodyRegistro .pasos {
+    align-items: center;
+    margin: 1rem;
+    display: grid;
+    grid-template-areas: "pasos img"  "parrafo img"; }
+    .bodyRegistro .pasos h3 {
+      grid-area: pasos;
+      background-color: rgba(0, 0, 0, 0.644);
+      margin: 0.5rem;
+      padding: 0.3rem;
+      color: #ffd000;
+      text-align: center;
+      border-radius: 10px; }
+    .bodyRegistro .pasos p {
+      text-align: left;
+      background-color: rgba(0, 0, 0, 0.644);
+      grid-area: parrafo;
+      color: #ffe260;
+      padding: 0.5rem;
+      margin: 1rem;
+      margin-top: 0rem; }
+    .bodyRegistro .pasos .img {
+      grid-area: img;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem;
+      margin-top: 3rem; }
+      .bodyRegistro .pasos .img img {
+        width: 25rem;
+        height: 12.5rem; } }
+
+.bodyConfig .configIntro h2 {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.644);
+  color: #ffd000;
+  margin: 1rem;
+  padding: 0.3rem;
+  border-radius: 10px; }
+
+.bodyConfig .parrafoConfig h2 {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.644);
+  color: #ffd000;
+  margin: 1rem;
+  padding: 0.3rem;
+  border-radius: 10px; }
+
+.bodyConfig .parrafoConfig p {
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.644);
+  grid-area: parrafo;
+  color: #ffe260;
+  padding: 0.5rem;
+  margin: 1rem;
+  margin-top: 0rem;
+  border-radius: 10px; }
+
+.bodyConfig .pasoPaso {
+  justify-content: center;
+  display: flex; }
+  .bodyConfig .pasoPaso h3 {
+    background-color: #ffd000;
+    color: black;
+    margin: 1rem;
+    padding: 0.3rem;
+    text-align: center;
+    border-radius: 10px; }
+
+.bodyConfig .pasos h4 {
+  background-color: rgba(0, 0, 0, 0.644);
+  margin: 1rem;
+  padding: 0.3rem;
+  color: #ffd000;
+  text-align: center;
+  border-radius: 10px; }
+
+.bodyConfig .pasos p {
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  color: #ffe260;
+  background-color: rgba(0, 0, 0, 0.644); }
+
+.bodyConfig .pasos .img {
+  display: flex;
+  justify-content: center;
+  margin: 1rem; }
+  .bodyConfig .pasos .img img {
+    width: 25rem;
+    height: 12.5rem; }
+
+@media only screen and (min-width: 700px) {
+  .bodyConfig .pasos {
+    align-items: center;
+    display: grid;
+    grid-template-areas: "pasos pasos"  "parrafo img"; }
+    .bodyConfig .pasos h4 {
+      grid-area: pasos;
+      background-color: rgba(0, 0, 0, 0.644);
+      margin: 1rem;
+      padding: 0.3rem;
+      color: #ffd000;
+      text-align: center;
+      border-radius: 10px; }
+    .bodyConfig .pasos p {
+      grid-area: parrafo;
+      background-color: rgba(0, 0, 0, 0.644);
+      margin: 1rem;
+      padding: 00.5rem;
+      border-radius: 10px; }
+    .bodyConfig .pasos .img {
+      grid-area: img;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem; }
+      .bodyConfig .pasos .img img {
+        width: 25rem;
+        height: 12.5rem; } }
+
+@media only screen and (min-width: 1024px) {
+  .bodyConfig .configRsp {
+    justify-content: center;
+    display: grid;
+    grid-template-areas: "sucursales video" "parrafo video"; }
+    .bodyConfig .configRsp .parrafoConfig {
+      grid-area: sucursales; }
+      .bodyConfig .configRsp .parrafoConfig h2 {
+        padding: 0.5rem; }
+      .bodyConfig .configRsp .parrafoConfig p {
+        margin: 2rem;
+        align-items: center; }
+    .bodyConfig .configRsp .configIntro {
+      grid-area: video; }
+      .bodyConfig .configRsp .configIntro h2 {
+        padding: 0.5rem; }
+      .bodyConfig .configRsp .configIntro .video {
+        align-items: center;
+        margin: 2rem; }
+  .bodyConfig .pasos {
+    align-items: center;
+    margin: 1rem;
+    display: grid;
+    grid-template-areas: "pasos img"  "parrafo img"; }
+    .bodyConfig .pasos h3 {
+      grid-area: pasos;
+      background-color: rgba(0, 0, 0, 0.644);
+      margin: 0.5rem;
+      padding: 0.3rem;
+      color: #ffd000;
+      text-align: center;
+      border-radius: 10px; }
+    .bodyConfig .pasos p {
+      text-align: left;
+      background-color: rgba(0, 0, 0, 0.644);
+      grid-area: parrafo;
+      color: #ffe260;
+      padding: 0.5rem;
+      margin: 1rem;
+      margin-top: 0rem; }
+    .bodyConfig .pasos .img {
+      grid-area: img;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem;
+      margin-top: 3rem; }
+      .bodyConfig .pasos .img img {
+        width: 25rem;
+        height: 12.5rem; } }
