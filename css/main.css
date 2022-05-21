@@ -7,10 +7,6 @@
   font-family: fuentehuno;
   src: url(../fuentes/PermanentMarker-Regular.ttf); }
 
-@font-face {
-  font-family: fuenteli;
-  src: url(../fuentes/EBGaramond-BoldItalic.ttf); }
-
 .banner {
   display: flex;
   justify-content: space-between;
@@ -32,10 +28,12 @@
     align-items: center; }
     .banner .logo a {
       text-decoration: none;
-      margin: 0rem;
+      margin: 0rem 0.5rem;
       background-color: black;
       border-style: none;
       padding: 0rem; }
+      .banner .logo a :hover {
+        transform: scale(1.1); }
     .banner .logo img {
       height: 60px;
       margin: 0.1rem; }
@@ -68,7 +66,7 @@
       padding: 0.3rem;
       border-style: solid; }
       .navUno nav ul li a {
-        padding: 0rem 2rem;
+        font-family: 'Koulen', cursive;
         text-decoration: none;
         color: black; }
 
@@ -85,7 +83,8 @@ body {
   color: black;
   text-align: center;
   border-radius: 10px;
-  border-style: solid; }
+  border-style: solid;
+  font-family: 'Koulen', cursive; }
 
 .video {
   display: flex;
@@ -103,8 +102,10 @@ body {
     padding: 0.3rem;
     color: #ffd000;
     text-align: center;
-    border-radius: 10px; }
+    border-radius: 10px;
+    font-family: 'Koulen', cursive; }
   .primerTexto h5 {
+    font-family: 'Cairo', sans-serif;
     align-items: center;
     margin: 1rem;
     margin-top: 2rem;
@@ -117,9 +118,11 @@ body {
   padding: 0.3rem;
   color: #ffd000;
   text-align: center;
-  border-radius: 10px; }
+  border-radius: 10px;
+  font-family: 'Koulen', cursive; }
 
 .segundoTexto h5 {
+  font-family: 'Cairo', sans-serif;
   color: white;
   text-align: left;
   margin: 0.5rem 2rem 0.5rem 2rem; }
@@ -132,7 +135,8 @@ body {
     padding: 0.3rem;
     color: #ffd000;
     text-align: center;
-    border-radius: 10px; }
+    border-radius: 10px;
+    font-family: 'Koulen', cursive; }
   .atencion .what {
     display: flex;
     margin-left: 2rem;
@@ -173,6 +177,20 @@ body {
       padding: 0.3rem;
       border-style: solid;
       border-radius: 10px; }
+
+.desarrollo {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  margin: 0rem 1rem; }
+  .desarrollo h6 {
+    padding: 0.3rem;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.644); }
+    .desarrollo h6 a {
+      color: #ffe260;
+      text-decoration: none; }
 
 @media only screen and (min-width: 700px) {
   .navUno nav {
@@ -228,7 +246,7 @@ body {
           border-radius: 10px;
           border-style: solid;
           text-align: center;
-          padding: 0.3rem 2rem;
+          padding: 0rem 2rem;
           text-decoration: none;
           color: black; }
   .mainInicio {
@@ -297,14 +315,16 @@ body {
   border-radius: 10px;
   border-style: solid;
   border-color: black;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Koulen', cursive; }
 
 .bodyPresupuesto .textoUno p {
   background-color: rgba(0, 0, 0, 0.644);
   color: white;
   margin: 2rem;
   padding: 0.5rem;
-  border-radius: 10px; }
+  border-radius: 10px;
+  font-family: 'Cairo', sans-serif; }
 
 .bodyPresupuesto .pasoPaso h3 {
   background-color: #ffe260;
@@ -314,7 +334,8 @@ body {
   border-radius: 10px;
   border-style: solid;
   border-color: black;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Koulen', cursive; }
 
 .bodyPresupuesto .pasos h3 {
   background-color: rgba(0, 0, 0, 0.644);
@@ -322,9 +343,11 @@ body {
   padding: 0.3rem;
   color: #ffd000;
   text-align: center;
-  border-radius: 10px; }
+  border-radius: 10px;
+  font-family: 'Koulen', cursive; }
 
 .bodyPresupuesto .pasos p {
+  font-family: 'Cairo', sans-serif;
   color: #ffe260;
   background-color: rgba(0, 0, 0, 0.644);
   margin: 1rem;
@@ -341,7 +364,7 @@ body {
   justify-content: center;
   margin: 1rem; }
   .bodyPresupuesto .pasos .img img {
-    width: 25rem;
+    width: 22rem;
     height: 12.5rem; }
 
 @media only screen and (min-width: 700px) {
@@ -376,8 +399,10 @@ body {
       padding: 0.3rem;
       color: #ffd000;
       text-align: center;
-      border-radius: 10px; }
+      border-radius: 10px;
+      font-family: 'Koulen', cursive; }
     .bodyPresupuesto .pasos p {
+      font-family: 'Cairo', sans-serif;
       grid-area: parrafo;
       color: #ffe260;
       background-color: rgba(0, 0, 0, 0.644);
@@ -408,6 +433,7 @@ body {
       .bodyPresupuesto .navDos ul li :hover {
         background-color: rgba(0, 0, 0, 0.644); }
       .bodyPresupuesto .navDos ul li a {
+        font-family: 'Koulen', cursive;
         display: inline-block;
         background-color: black;
         border-style: solid;
@@ -427,6 +453,7 @@ body {
     display: grid;
     grid-template-areas: "pasos img"  "parrafo img"; }
     .bodyPresupuesto .pasos h3 {
+      font-family: 'Koulen', cursive;
       grid-area: pasos;
       background-color: rgba(0, 0, 0, 0.644);
       margin: 0.5rem;
@@ -435,6 +462,7 @@ body {
       text-align: center;
       border-radius: 10px; }
     .bodyPresupuesto .pasos p {
+      font-family: 'Cairo', sans-serif;
       text-align: left;
       background-color: rgba(0, 0, 0, 0.644);
       grid-area: parrafo;
@@ -458,6 +486,7 @@ body {
       display: flex;
       justify-content: center; }
       .mercadoRuedas .mercadoH h2 {
+        font-family: 'Koulen', cursive;
         background-color: #ffe260;
         color: black;
         margin-top: 2rem;
@@ -480,6 +509,7 @@ body {
   justify-content: center;
   display: flex; }
   .bodyRegistro .pasoPaso h3 {
+    font-family: 'Koulen', cursive;
     background-color: #ffe260;
     color: black;
     margin: 1rem;
@@ -488,6 +518,7 @@ body {
     border-radius: 10px; }
 
 .bodyRegistro .pasos h4 {
+  font-family: 'Koulen', cursive;
   background-color: rgba(0, 0, 0, 0.644);
   margin: 1rem;
   padding: 0.3rem;
@@ -496,6 +527,7 @@ body {
   border-radius: 10px; }
 
 .bodyRegistro .pasos p {
+  font-family: 'Cairo', sans-serif;
   margin: 1rem;
   padding: 0.5rem;
   border-radius: 10px;
@@ -507,7 +539,7 @@ body {
   justify-content: center;
   margin: 1rem; }
   .bodyRegistro .pasos .img img {
-    width: 25rem;
+    width: 22rem;
     height: 12.5rem; }
 
 @media only screen and (min-width: 700px) {
@@ -577,7 +609,8 @@ body {
       color: #ffe260;
       padding: 0.5rem;
       margin: 1rem;
-      margin-top: 0rem; }
+      margin-top: 0rem;
+      font-family: 'Cairo', sans-serif; }
     .bodyRegistro .pasos .img {
       grid-area: img;
       display: flex;
@@ -590,6 +623,7 @@ body {
         height: 12.5rem; } }
 
 .bodyConfig .configIntro h2 {
+  font-family: 'Koulen', cursive;
   text-align: center;
   background-color: #ffe260;
   color: black;
@@ -599,6 +633,7 @@ body {
   border-style: solid; }
 
 .bodyConfig .parrafoConfig h2 {
+  font-family: 'Koulen', cursive;
   text-align: center;
   background-color: #ffe260;
   color: black;
@@ -608,6 +643,7 @@ body {
   border-style: solid; }
 
 .bodyConfig .parrafoConfig p {
+  font-family: 'Cairo', sans-serif;
   text-align: left;
   background-color: rgba(0, 0, 0, 0.644);
   grid-area: parrafo;
@@ -626,9 +662,12 @@ body {
     margin: 1rem;
     padding: 0.5rem 5rem;
     text-align: center;
-    border-radius: 10px; }
+    border-radius: 10px;
+    border-style: solid;
+    font-family: 'Koulen', cursive; }
 
 .bodyConfig .pasos h4 {
+  font-family: 'Koulen', cursive;
   background-color: rgba(0, 0, 0, 0.644);
   margin: 1rem;
   padding: 0.3rem;
@@ -637,6 +676,7 @@ body {
   border-radius: 10px; }
 
 .bodyConfig .pasos p {
+  font-family: 'Cairo', sans-serif;
   margin: 1rem;
   padding: 0.5rem;
   border-radius: 10px;
@@ -648,7 +688,7 @@ body {
   justify-content: center;
   margin: 1rem; }
   .bodyConfig .pasos .img img {
-    width: 25rem;
+    width: 22rem;
     height: 12.5rem; }
 
 @media only screen and (min-width: 700px) {

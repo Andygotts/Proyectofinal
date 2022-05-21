@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 //imports//
- @import "variables/fuentes";
+
  @import "variables/variables"; 
+
     //--------//
     //-----------------------Inicio - mobile --------------------//
     //header//
@@ -28,15 +29,19 @@
       border-radius: 10px;
       border-style: solid;
     }
+ 
     .logo{
         display: flex;
         align-items: center;
         a{
              text-decoration: none;
-             margin: 0rem;
+             margin: 0rem 0.5rem;
              background-color: nth($colores, 5 );
              border-style: none;
              padding: 0rem;
+             :hover{
+                 transform: scale(1.1);
+             }
         }
          img{
               height: 60px;
@@ -44,6 +49,7 @@
         }
     }
 }
+
 //--------------------------menu nav-------------------------//
 .navUno{
  nav{
@@ -70,8 +76,9 @@
                                          text-align: center;
                                          padding: 0.3rem;
                                          border-style: solid;
+                                         
                                       a {
-                                          padding: 0rem 2rem;
+                                        font-family: 'Koulen', cursive;
                                           text-decoration: none;
                                           color: nth($colores, 5 );
                                           }  
@@ -96,6 +103,7 @@ body{
         text-align: center;
         border-radius: 10px;
         border-style: solid;
+        font-family: 'Koulen', cursive;
     }
 
 }
@@ -117,10 +125,12 @@ body{
         padding: 0.3rem;
         color: nth($colores, 1 );
         text-align: center;
-        border-radius: 10px; 
+        border-radius: 10px;
+        font-family: 'Koulen', cursive;
     }
      h5{
-         align-items: center;
+        font-family: 'Cairo', sans-serif;
+        align-items: center;
         margin: 1rem;
         margin-top: 2rem;
         color: nth($colores, 4 );
@@ -135,9 +145,11 @@ body{
         color: nth($colores, 1 );
         text-align: center;
         border-radius: 10px;
+        font-family: 'Koulen', cursive;
 
     }
     h5{
+        font-family: 'Cairo', sans-serif;
         color: nth($colores, 4 );
         text-align: left;
         margin: 0.5rem 2rem 0.5rem 2rem;
@@ -153,6 +165,7 @@ body{
              color: nth($colores, 1 );
              text-align: center;
              border-radius: 10px;
+             font-family: 'Koulen', cursive;
         }
     .what
     {
@@ -204,6 +217,24 @@ body{
          }
     } 
 }
+    .desarrollo{
+        display: block;
+        text-align: center;
+        justify-content: center;
+        margin: 0rem 1rem;
+         h6{
+            padding: 0.3rem;
+            border-radius: 10px;
+            color: nth($colores, 4 );
+            background-color: nth($colores, 2 );
+            a{
+                color: nth($colores, 6 );
+                text-decoration: none;
+          }
+        }            
+      }
+    
+
     
     //-------------------------------------fin footer -----------------------------//
 
@@ -278,7 +309,7 @@ body{
                                                       border-radius: 10px;
                                                       border-style: solid;
                                                       text-align: center;
-                                                      padding: 0.3rem 2rem;
+                                                      padding: 0rem 2rem;
                                                       text-decoration: none;
                                                       color: nth($colores, 5);
                                                   }  
@@ -377,6 +408,7 @@ body{
                 border-style: solid;
                 border-color: black;
                 text-align: center;
+                font-family: 'Koulen', cursive;
               }
               p{
                 background-color: nth($colores, 2 );
@@ -384,6 +416,7 @@ body{
                 margin: 2rem;
                 padding: 0.5rem;
                 border-radius: 10px;
+                font-family: 'Cairo', sans-serif;
               }
             }
 
@@ -398,6 +431,7 @@ body{
                 border-style: solid;
                 border-color: black;
                 text-align: center;
+                font-family: 'Koulen', cursive;
             }
         }
           .pasos{
@@ -408,8 +442,10 @@ body{
                     color: nth($colores, 1 );
                     text-align: center;
                     border-radius: 10px;
+                    font-family: 'Koulen', cursive;
                 }
                 p{
+                    font-family: 'Cairo', sans-serif;
                     color: nth($colores, 6 );
                     background-color: nth($colores, 2 );
                     margin: 1rem;
@@ -426,7 +462,7 @@ body{
                     justify-content: center;
                     margin: 1rem;
                     img{
-                       width: 25rem;
+                       width: 22rem;
                        height: 12.5rem;
                  }
              }
@@ -476,8 +512,10 @@ body{
                 color: nth($colores, 1 );
                 text-align: center;
                 border-radius: 10px;
+                font-family: 'Koulen', cursive;
             }
             p{
+                font-family: 'Cairo', sans-serif;
                 grid-area: parrafo;
                 color: nth($colores, 6 );
                 background-color: nth($colores, 2 );
@@ -516,6 +554,7 @@ body{
                 border: none;
                 background-color: rgb(70, 69, 69);
                 a{
+                     font-family: 'Koulen', cursive;
                      display: inline-block;
                      background-color: nth($colores,5) ;
                      border-style: solid;
@@ -542,6 +581,7 @@ body{
         grid-template-areas: "pasos img" 
                              "parrafo img";
         h3{
+            font-family: 'Koulen', cursive;
             grid-area: pasos;
             background-color: nth($colores, 2 );
             margin: 0.5rem;
@@ -551,6 +591,7 @@ body{
             border-radius: 10px;
         }
         p{
+            font-family: 'Cairo', sans-serif;
             text-align: left;
             background-color: nth($colores,2);
             grid-area: parrafo;
@@ -582,6 +623,7 @@ body{
          display: flex;
          justify-content: center; 
      h2{
+        font-family: 'Koulen', cursive;
         background-color: nth($colores,6 );
         color: nth($colores ,5);
         margin-top: 2rem;
@@ -614,6 +656,7 @@ body{
     justify-content: center;
     display: flex;
     h3{
+        font-family: 'Koulen', cursive;
         background-color: nth($colores ,6);
         color:nth($colores ,5);
         margin: 1rem;
@@ -624,6 +667,7 @@ body{
 }
   .pasos{
         h4{
+            font-family: 'Koulen', cursive;
             background-color: nth($colores, 2 );
             margin: 1rem;
             padding: 0.3rem;
@@ -632,6 +676,7 @@ body{
             border-radius: 10px;
         }
         p{
+            font-family: 'Cairo', sans-serif;
             margin: 1rem;
             padding: 0.5rem;
             border-radius: 10px;
@@ -644,7 +689,7 @@ body{
             justify-content: center;
             margin: 1rem;
             img{
-               width: 25rem;
+               width: 22rem;
                height: 12.5rem;
          }
      }
@@ -745,7 +790,7 @@ body{
             padding: 0.5rem;
             margin: 1rem;
             margin-top: 0rem;
-
+            font-family: 'Cairo', sans-serif;
         }
       .img{
             grid-area: img;
@@ -766,6 +811,7 @@ body{
 .bodyConfig{
     .configIntro{
         h2{
+            font-family: 'Koulen', cursive;
         text-align: center;
         background-color: nth($colores,6 );
         color: nth($colores ,5);
@@ -777,6 +823,7 @@ body{
    }
     .parrafoConfig{
        h2{
+        font-family: 'Koulen', cursive;
         text-align: center;
         background-color: nth($colores,6 );
         color: nth($colores ,5);
@@ -787,6 +834,7 @@ body{
     }
         
         p{
+            font-family: 'Cairo', sans-serif;
             text-align: left;
             background-color: nth($colores,2);
             grid-area: parrafo;
@@ -808,10 +856,13 @@ body{
             padding: 0.5rem 5rem ;
             text-align: center;
             border-radius: 10px;
+            border-style: solid;
+            font-family: 'Koulen', cursive;
         }
     }
       .pasos{
             h4{
+                font-family: 'Koulen', cursive;
                 background-color: nth($colores, 2 );
                 margin: 1rem;
                 padding: 0.3rem;
@@ -820,6 +871,7 @@ body{
                 border-radius: 10px;
             }
             p{
+                font-family: 'Cairo', sans-serif;
                 margin: 1rem;
                 padding: 0.5rem;
                 border-radius: 10px;
@@ -832,7 +884,7 @@ body{
                 justify-content: center;
                 margin: 1rem;
                 img{
-                   width: 25rem;
+                   width: 22rem;
                    height: 12.5rem;
              }
          }
