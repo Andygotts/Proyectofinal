@@ -26,8 +26,7 @@
       color: nth($colores, 1 );
       padding: 0.4rem;
       border-radius: 10px;
-      border-style: solid; 
-
+      border-style: solid;
     }
     .logo{
         display: flex;
@@ -45,10 +44,10 @@
         }
     }
 }
-//menu nav//
+//--------------------------menu nav-------------------------//
 .navUno{
  nav{
-    background-color: nth($colores, 1 );
+    background-color: nth($colores, 3 );
     ul {
     margin-right: 2rem;
     display: grid;
@@ -64,39 +63,39 @@
                          .configuracion{grid-area: configuracion;}
                                      li{
                                          display: inline-block;
-                                         background-color: black ;
-                                         margin: 0.3rem;
-                                         border-style: solid;
+                                         background-color: nth($colores, 1) ;
+                                         margin: 0.3rem;     
                                          border-color: nth($colores, 4 );
                                          border-radius: 10px;
                                          text-align: center;
                                          padding: 0.3rem;
-                                         font-family: fuenteli;
+                                         border-style: solid;
                                       a {
+                                          padding: 0rem 2rem;
                                           text-decoration: none;
-                                          color: nth($colores, 4 );
+                                          color: nth($colores, 5 );
                                           }  
                                        }
                                    }
                                }
                             }
-//--header--//
-//body//
+//----------------------------------header------------------------------------//
+//--------------------------------body---------------------------------------//
 .carusel{
     display: none;
 }
 body{
-    
-    background-color: rgb(49, 49, 49);
+    background-color: rgb(70, 69, 69);
 }
 .intro{
     h2{
-        background-color: nth($colores, 2 );
+        background-color: nth($colores, 6 );
         margin: 1rem;
         padding: 0.3rem;
-        color: nth($colores, 1 );
+        color: nth($colores, 5 );
         text-align: center;
-        border-radius: 10px
+        border-radius: 10px;
+        border-style: solid;
     }
 
 }
@@ -110,8 +109,7 @@ body{
         width: 20rem;
     }
 }
-.primerTexto{
-    
+.primerTexto{ 
     margin: 1rem;
     h2{
         background-color: nth($colores, 2 );
@@ -119,11 +117,12 @@ body{
         padding: 0.3rem;
         color: nth($colores, 1 );
         text-align: center;
-        border-radius: 10px;
-        
+        border-radius: 10px; 
     }
      h5{
+         align-items: center;
         margin: 1rem;
+        margin-top: 2rem;
         color: nth($colores, 4 );
         text-align: left;
     }
@@ -144,7 +143,7 @@ body{
         margin: 0.5rem 2rem 0.5rem 2rem;
     }
 }
-                        //footer//
+//------------------------------footer----------------------------//
 .atencion{
     display: grid;
          h2{
@@ -206,35 +205,34 @@ body{
     } 
 }
     
-    //footer//
-    //--body--//
-    //---------------------fin Inicio - mobile--------------------//
+    //-------------------------------------fin footer -----------------------------//
+
     //---------------------inicio-tablet--------------------------//
     @media only screen and (min-width: 700px){
     .navUno{
     nav{
-            background-color: nth($colores, 1 );         
+            background-color: nth($colores, 3 );           
         ul {
             display: flex;
             list-style: none;
-            justify-content: center;
-                                             li{
-                                                 background-color: black ;
-                                                 margin: 0.5rem; 
-                                                 border-style: solid;
-                                                 border-color: nth($colores, 4 );
-                                                 border-radius: 10px;
-                                                 text-align: center;
-                                                 padding: 0.5rem;
-                                                 font-family: fuenteli;
-                                              a {
-                                                  text-decoration: none;
-                                                  color: nth($colores, 4 );
-                                              }  
-                                            }
-                                        }
-                                    }
-                                } 
+            justify-content: space-evenly;
+                                   li{
+                                       background-color: nth($colores, 1 );
+                                       margin: 0.5rem; 
+                                       border-radius: 10px;
+                                       border-width: 4px;
+                                       border-style: solid ;
+                                       text-align: center;
+                                       padding: 0.3rem 0.5rem;
+                                    a{
+                                        padding: 0px;
+                                        text-decoration: none;
+                                        color: nth($colores, 5 );
+                                    }  
+                                  }
+                              }
+                          }
+                      } 
                                     .carusel{
                                         display: none;} 
                                     .video{
@@ -263,23 +261,26 @@ body{
 @media only screen and (min-width: 1024px){
     .navUno{
         nav{
-                background-color: nth($colores, 1 );         
+                background-color: nth($colores, 3 );         
             ul {
                 display: flex;
                 list-style: none;
-                justify-content: center;
-                                                 li{
-                                                     background-color: black ;
-                                                     margin: 0.3rem 1rem ; 
-                                                     border-style: solid;
-                                                     border-color: nth($colores, 4 );
-                                                     border-radius: 10px;
-                                                     text-align: center;
-                                                     padding: 0.3rem 2rem;
-                                                     font-family: fuenteli;
-                                                  a {
+                justify-content: space-evenly;
+                                        li{
+                                            border: none;
+                                            background-color: nth($colores, 3 );
+                                            :hover{
+                                            background-color: nth($colores, 6 );
+                                        }
+                                                   a{
+                                                      background-color: nth($colores, 1 ) ;
+                                                      border-color: nth($colores, 4 );
+                                                      border-radius: 10px;
+                                                      border-style: solid;
+                                                      text-align: center;
+                                                      padding: 0.3rem 2rem;
                                                       text-decoration: none;
-                                                      color: nth($colores, 4 );
+                                                      color: nth($colores, 5);
                                                   }  
                                                 }
                                             }
@@ -347,28 +348,28 @@ body{
             margin-right: 1.5rem;
               li{
                 display: inline-block;
-                background-color: nth($colores, 1 ) ;
+                background-color: nth($colores, 5 ) ;
                 border-style: solid;
-                border-color: nth($colores,5 );
+                border-color: nth($colores,4 );
                 border-radius: 10px;
                 text-align: center;
                 padding: 0.5rem 1rem 0.5rem 1rem;
                 margin: 0.5rem;
-                font-family: fuenteli;
+    
                 a{
                     text-decoration: none;
-                    color: nth($colores, 5 );
+                    color: nth($colores, 4 );
                 }
               }    
            }
         }
-        //------body------//
+//----------------------------body---------------------------//
         .mercadoH{
             display: none;
         }
           .textoUno{ 
               h2{                 
-                background-color: nth($colores, 1 );
+                background-color: nth($colores, 6 );
                 color: nth($colores ,5);
                 margin: 1rem;
                 padding: 0.3rem;
@@ -384,11 +385,12 @@ body{
                 padding: 0.5rem;
                 border-radius: 10px;
               }
+            }
 
-          }
+          //----------------------------pasos---------------------------//
         .pasoPaso{
             h3{
-                background-color: nth($colores, 1 );
+                background-color: nth($colores, 6 );
                 color: nth($colores ,5);
                 margin: 1rem;
                 padding: 0.3rem;
@@ -430,6 +432,8 @@ body{
              }
           }
       }
+      //----------------------------fin pasos---------------------------//
+      //----------------------------tablet presupuesto---------------------------//
       @media only screen and (min-width: 700px){
         .mercadoH{
             display: none;
@@ -443,21 +447,22 @@ body{
                 margin-right: 1.5rem;
                   li{
                     display: inline-block;
-                    background-color: nth($colores, 1 ) ;
+                    background-color: nth($colores, 5 ) ;
                     border-style: solid;
-                    border-color: nth($colores, 5 );
+                    border-color: nth($colores, 4 );
                     border-radius: 10px;
                     text-align: center;
                     padding: 0.5rem 5rem 0.5rem 5rem;
                     margin: 0.5rem;
-                    font-family: fuenteli;
+                
                     a{
                         text-decoration: none;
-                        color: nth($colores, 5 );
+                        color: nth($colores, 4 );
                     }
                   }    
                }
             }
+            //----------------------------pasos---------------------------//
         .pasos{
             align-items: center;
             display: grid;
@@ -489,11 +494,12 @@ body{
                 img{
                    width: 25rem;
                    height: 12.5rem;
-             }
-         }
-      }
-    }
+     }
+   }
+  }
+ }
 }
+//----------------------------full screen presupuesto---------------------------//
 @media only screen and (min-width: 1024px){
     .bodyPresupuesto{
         .navDos{
@@ -502,19 +508,24 @@ body{
                 list-style: none;
                 margin-top: 1rem;
                 margin-right: 1.5rem;
-                  li{
-                    display: inline-block;
-                    background-color: nth($colores, 1 ) ;
-                    border-style: solid;
-                    border-color: nth($colores, 5 );
-                    border-radius: 10px;
-                    text-align: center;
-                    padding: 0.5rem 8rem 0.5rem 8rem;
-                    margin: 0.5rem;
-                    font-family: fuenteli;
-                    a{
-                        text-decoration: none;
-                        color: nth($colores, 5 );
+            li{
+                :hover{
+                    background-color: nth($colores, 2 );
+                }
+                padding: 0rem ;
+                border: none;
+                background-color: rgb(70, 69, 69);
+                a{
+                     display: inline-block;
+                     background-color: nth($colores,5) ;
+                     border-style: solid;
+                     border-color: nth($colores, 4 );
+                     border-radius: 10px;
+                     text-align: center;
+                     padding: 0.5rem 8rem 0.5rem 8rem;
+                     margin: 0.5rem;
+                     text-decoration: none;
+                     color: nth($colores,4 );
                     }
                   }    
                }
@@ -523,6 +534,7 @@ body{
         display: grid;
         grid-template-areas: "pasos img" 
                              "parrafo img"}
+//----------------------------pasos---------------------------//
     .pasos{
         align-items: center;
         margin: 1rem;
@@ -562,6 +574,8 @@ body{
     }
    }
   }
+  //----------------------------fin pasos ---------------------------//
+  //----------------------------inicio Mercado Ruedas---------------------------//
  .mercadoRuedas{
      justify-content: center;
      .mercadoH{
@@ -580,7 +594,7 @@ body{
      .carusel{
          display: block;
             margin-top: 1rem;
-            margin: 3rem;
+            margin: 3rem 6rem;
             img{
                 height: 25rem;
                 width: 50rem;
@@ -595,14 +609,15 @@ body{
         display: none;
     }
 }
+//----------------------------Pasos---------------------------//
 .pasoPaso{
     justify-content: center;
     display: flex;
     h3{
-        background-color: nth($colores ,1);
+        background-color: nth($colores ,6);
         color:nth($colores ,5);
         margin: 1rem;
-        padding: 0.3rem;
+        padding: 0.5rem 5rem;
         text-align: center;
         border-radius: 10px;
     }
@@ -635,9 +650,9 @@ body{
      }
   }
 }
+//----------------------------fin pasos---------------------------//
+//----------------------------tablet registro---------------------------//
   @media only screen and (min-width: 700px){
-
- 
     .bodyRegistro{
         .vidRegis{
             img{
@@ -649,7 +664,8 @@ body{
             h3{
                 color: nth($colores, 1 );
             }
-        }      
+        }    
+        //----------------------------pasos---------------------------//  
     .pasos{
         align-items: center;
         display: grid;
@@ -685,6 +701,8 @@ body{
   }
  }
 }
+//----------------------------fin pasos---------------------------//
+//----------------------------full screen regisro---------------------------//
 @media only screen and (min-width: 1024px){
     .bodyRegistro{ 
      .vidRegis{
@@ -703,7 +721,7 @@ body{
              }
          }
      }
-      
+      //----------------------------pasos---------------------------//
     .pasos{
         align-items: center;
         margin: 1rem;
@@ -744,26 +762,30 @@ body{
    }
   }
 }
-//---------------------config------------------------------//
+//---------------------configuracion------------------------------//
 .bodyConfig{
     .configIntro{
         h2{
         text-align: center;
-        background-color: nth($colores,2 );
-        color: nth($colores ,1);
+        background-color: nth($colores,6 );
+        color: nth($colores ,5);
         margin: 1rem;
         padding: 0.3rem;
         border-radius: 10px;
+        border-style: solid;
      }
    }
     .parrafoConfig{
        h2{
         text-align: center;
-        background-color: nth($colores,2 );
-        color: nth($colores ,1);
+        background-color: nth($colores,6 );
+        color: nth($colores ,5);
         margin: 1rem;
         padding: 0.3rem;
-        border-radius: 10px;}
+        border-radius: 10px;
+        border-style: solid;
+    }
+        
         p{
             text-align: left;
             background-color: nth($colores,2);
@@ -775,14 +797,15 @@ body{
             border-radius: 10px;
      }
    }
+   //----------------------------pasos---------------------------//
     .pasoPaso{
         justify-content: center;
         display: flex;
         h3{
-            background-color: nth($colores ,1);
+            background-color: nth($colores ,6);
             color:nth($colores ,5);
             margin: 1rem;
-            padding: 0.3rem;
+            padding: 0.5rem 5rem ;
             text-align: center;
             border-radius: 10px;
         }
@@ -815,6 +838,7 @@ body{
          }
       }
     }
+    //----------------------------tablet configuracion---------------------------//
     @media only screen and (min-width: 700px){
 
  
@@ -854,6 +878,7 @@ body{
       }
      }
     }
+    //----------------------------full screen configuracion---------------------------//
     @media only screen and (min-width: 1024px){
         .bodyConfig{ 
          .configRsp{
@@ -883,7 +908,7 @@ body{
                       
              }
           }
-          
+          //----------------------------pasos---------------------------//
         .pasos{
             align-items: center;
             margin: 1rem;
@@ -892,7 +917,7 @@ body{
                                  "parrafo img";
             h3{
                 grid-area: pasos;
-                background-color: nth($colores, 2 );
+                background-color: nth($colores, 6 );
                 margin: 0.5rem;
                 padding: 0.3rem;
                 color: nth($colores, 1 );
@@ -924,3 +949,4 @@ body{
        }
       }
     }
+    //----------------------------fin---------------------------//

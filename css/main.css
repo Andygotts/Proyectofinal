@@ -41,7 +41,7 @@
       margin: 0.1rem; }
 
 .navUno nav {
-  background-color: #ffd000; }
+  background-color: #313131; }
   .navUno nav ul {
     margin-right: 2rem;
     display: grid;
@@ -60,31 +60,32 @@
       grid-area: configuracion; }
     .navUno nav ul li {
       display: inline-block;
-      background-color: black;
+      background-color: #ffd000;
       margin: 0.3rem;
-      border-style: solid;
       border-color: white;
       border-radius: 10px;
       text-align: center;
       padding: 0.3rem;
-      font-family: fuenteli; }
+      border-style: solid; }
       .navUno nav ul li a {
+        padding: 0rem 2rem;
         text-decoration: none;
-        color: white; }
+        color: black; }
 
 .carusel {
   display: none; }
 
 body {
-  background-color: #313131; }
+  background-color: #464545; }
 
 .intro h2 {
-  background-color: rgba(0, 0, 0, 0.644);
+  background-color: #ffe260;
   margin: 1rem;
   padding: 0.3rem;
-  color: #ffd000;
+  color: black;
   text-align: center;
-  border-radius: 10px; }
+  border-radius: 10px;
+  border-style: solid; }
 
 .video {
   display: flex;
@@ -104,7 +105,9 @@ body {
     text-align: center;
     border-radius: 10px; }
   .primerTexto h5 {
+    align-items: center;
     margin: 1rem;
+    margin-top: 2rem;
     color: white;
     text-align: left; }
 
@@ -173,23 +176,23 @@ body {
 
 @media only screen and (min-width: 700px) {
   .navUno nav {
-    background-color: #ffd000; }
+    background-color: #313131; }
     .navUno nav ul {
       display: flex;
       list-style: none;
-      justify-content: center; }
+      justify-content: space-evenly; }
       .navUno nav ul li {
-        background-color: black;
+        background-color: #ffd000;
         margin: 0.5rem;
-        border-style: solid;
-        border-color: white;
         border-radius: 10px;
+        border-width: 4px;
+        border-style: solid;
         text-align: center;
-        padding: 0.5rem;
-        font-family: fuenteli; }
+        padding: 0.3rem 0.5rem; }
         .navUno nav ul li a {
+          padding: 0px;
           text-decoration: none;
-          color: white; }
+          color: black; }
   .carusel {
     display: none; }
   .video {
@@ -209,23 +212,25 @@ body {
 
 @media only screen and (min-width: 1024px) {
   .navUno nav {
-    background-color: #ffd000; }
+    background-color: #313131; }
     .navUno nav ul {
       display: flex;
       list-style: none;
-      justify-content: center; }
+      justify-content: space-evenly; }
       .navUno nav ul li {
-        background-color: black;
-        margin: 0.3rem 1rem;
-        border-style: solid;
-        border-color: white;
-        border-radius: 10px;
-        text-align: center;
-        padding: 0.3rem 2rem;
-        font-family: fuenteli; }
+        border: none;
+        background-color: #313131; }
+        .navUno nav ul li :hover {
+          background-color: #ffe260; }
         .navUno nav ul li a {
+          background-color: #ffd000;
+          border-color: white;
+          border-radius: 10px;
+          border-style: solid;
+          text-align: center;
+          padding: 0.3rem 2rem;
           text-decoration: none;
-          color: white; }
+          color: black; }
   .mainInicio {
     display: grid;
     grid-template-areas: "carusel carusel" "primer video" "segundo segundo"; }
@@ -270,23 +275,22 @@ body {
   margin-right: 1.5rem; }
   .bodyPresupuesto .navDos ul li {
     display: inline-block;
-    background-color: #ffd000;
+    background-color: black;
     border-style: solid;
-    border-color: black;
+    border-color: white;
     border-radius: 10px;
     text-align: center;
     padding: 0.5rem 1rem 0.5rem 1rem;
-    margin: 0.5rem;
-    font-family: fuenteli; }
+    margin: 0.5rem; }
     .bodyPresupuesto .navDos ul li a {
       text-decoration: none;
-      color: black; }
+      color: white; }
 
 .bodyPresupuesto .mercadoH {
   display: none; }
 
 .bodyPresupuesto .textoUno h2 {
-  background-color: #ffd000;
+  background-color: #ffe260;
   color: black;
   margin: 1rem;
   padding: 0.3rem;
@@ -303,7 +307,7 @@ body {
   border-radius: 10px; }
 
 .bodyPresupuesto .pasoPaso h3 {
-  background-color: #ffd000;
+  background-color: #ffe260;
   color: black;
   margin: 1rem;
   padding: 0.3rem;
@@ -351,17 +355,16 @@ body {
     margin-right: 1.5rem; }
     .bodyPresupuesto .navDos ul li {
       display: inline-block;
-      background-color: #ffd000;
+      background-color: black;
       border-style: solid;
-      border-color: black;
+      border-color: white;
       border-radius: 10px;
       text-align: center;
       padding: 0.5rem 5rem 0.5rem 5rem;
-      margin: 0.5rem;
-      font-family: fuenteli; }
+      margin: 0.5rem; }
       .bodyPresupuesto .navDos ul li a {
         text-decoration: none;
-        color: black; }
+        color: white; }
   .bodyPresupuesto .pasos {
     align-items: center;
     display: grid;
@@ -399,18 +402,22 @@ body {
     margin-top: 1rem;
     margin-right: 1.5rem; }
     .bodyPresupuesto .navDos ul li {
-      display: inline-block;
-      background-color: #ffd000;
-      border-style: solid;
-      border-color: black;
-      border-radius: 10px;
-      text-align: center;
-      padding: 0.5rem 8rem 0.5rem 8rem;
-      margin: 0.5rem;
-      font-family: fuenteli; }
+      padding: 0rem;
+      border: none;
+      background-color: #464545; }
+      .bodyPresupuesto .navDos ul li :hover {
+        background-color: rgba(0, 0, 0, 0.644); }
       .bodyPresupuesto .navDos ul li a {
+        display: inline-block;
+        background-color: black;
+        border-style: solid;
+        border-color: white;
+        border-radius: 10px;
+        text-align: center;
+        padding: 0.5rem 8rem 0.5rem 8rem;
+        margin: 0.5rem;
         text-decoration: none;
-        color: black; }
+        color: white; }
   .bodyPresupuesto .presuRsp {
     display: grid;
     grid-template-areas: "pasos img"  "parrafo img"; }
@@ -461,7 +468,7 @@ body {
     .mercadoRuedas .carusel {
       display: block;
       margin-top: 1rem;
-      margin: 3rem; }
+      margin: 3rem 6rem; }
       .mercadoRuedas .carusel img {
         height: 25rem;
         width: 50rem; } }
@@ -473,10 +480,10 @@ body {
   justify-content: center;
   display: flex; }
   .bodyRegistro .pasoPaso h3 {
-    background-color: #ffd000;
+    background-color: #ffe260;
     color: black;
     margin: 1rem;
-    padding: 0.3rem;
+    padding: 0.5rem 5rem;
     text-align: center;
     border-radius: 10px; }
 
@@ -584,19 +591,21 @@ body {
 
 .bodyConfig .configIntro h2 {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.644);
-  color: #ffd000;
+  background-color: #ffe260;
+  color: black;
   margin: 1rem;
   padding: 0.3rem;
-  border-radius: 10px; }
+  border-radius: 10px;
+  border-style: solid; }
 
 .bodyConfig .parrafoConfig h2 {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.644);
-  color: #ffd000;
+  background-color: #ffe260;
+  color: black;
   margin: 1rem;
   padding: 0.3rem;
-  border-radius: 10px; }
+  border-radius: 10px;
+  border-style: solid; }
 
 .bodyConfig .parrafoConfig p {
   text-align: left;
@@ -612,10 +621,10 @@ body {
   justify-content: center;
   display: flex; }
   .bodyConfig .pasoPaso h3 {
-    background-color: #ffd000;
+    background-color: #ffe260;
     color: black;
     margin: 1rem;
-    padding: 0.3rem;
+    padding: 0.5rem 5rem;
     text-align: center;
     border-radius: 10px; }
 
@@ -697,7 +706,7 @@ body {
     grid-template-areas: "pasos img"  "parrafo img"; }
     .bodyConfig .pasos h3 {
       grid-area: pasos;
-      background-color: rgba(0, 0, 0, 0.644);
+      background-color: #ffe260;
       margin: 0.5rem;
       padding: 0.3rem;
       color: #ffd000;
