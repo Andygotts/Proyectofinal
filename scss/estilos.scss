@@ -417,6 +417,7 @@ body{
                 padding: 0.5rem;
                 border-radius: 10px;
                 font-family: 'Cairo', sans-serif;
+                font-size: 20px;
               }
             }
 
@@ -451,6 +452,7 @@ body{
                     margin: 1rem;
                     padding: 0.5rem;
                     border-radius: 10px;
+                    font-size: 20px;
                 }
               .parrafo{
                     background-color: nth($colores, 6 );
@@ -522,6 +524,7 @@ body{
                 margin: 1rem;
                 padding: 00.5rem;
                 border-radius: 10px;
+                font-size: 20px;
             }
           .img{
                 grid-area: img;
@@ -682,6 +685,7 @@ body{
             border-radius: 10px;
             color: nth($colores,6);
             background-color:nth($colores,2) ;
+            font-size: 20px;
         }
     
       .img{
@@ -731,6 +735,7 @@ body{
             margin: 1rem;
             padding: 00.5rem;
             border-radius: 10px;
+            font-size: 20px;
         }
       .img{
             grid-area: img;
@@ -791,6 +796,7 @@ body{
             margin: 1rem;
             margin-top: 0rem;
             font-family: 'Cairo', sans-serif;
+            font-size: 20px;
         }
       .img{
             grid-area: img;
@@ -843,6 +849,7 @@ body{
             margin: 1rem;
             margin-top: 0rem;
             border-radius: 10px;
+            font-size: 20px;
      }
    }
    //----------------------------pasos---------------------------//
@@ -871,6 +878,7 @@ body{
                 border-radius: 10px;
             }
             p{
+                font-size: 20px;
                 font-family: 'Cairo', sans-serif;
                 margin: 1rem;
                 padding: 0.5rem;
@@ -915,6 +923,7 @@ body{
                 margin: 1rem;
                 padding: 00.5rem;
                 border-radius: 10px;
+                font-size: 20px;
             }
           .img{
                 grid-area: img;
@@ -984,6 +993,7 @@ body{
                 padding: 0.5rem;
                 margin: 1rem;
                 margin-top: 0rem;
+                font-size: 20px;
     
             }
           .img{
