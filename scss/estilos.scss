@@ -23,6 +23,7 @@
     a{
       text-decoration: none;
       margin: 1rem;
+      padding: 0.3rem;
       background-color: nth($colores, 3 );
       color: nth($colores, 1 );
       padding: 0.4rem;
@@ -35,7 +36,7 @@
         align-items: center;
         a{
              text-decoration: none;
-             margin: 0rem 0.5rem;
+             margin: 0rem 0.3rem;
              background-color: nth($colores, 5 );
              border-style: none;
              padding: 0rem;
