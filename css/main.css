@@ -517,7 +517,8 @@ body {
     margin: 1rem;
     padding: 0.5rem 5rem;
     text-align: center;
-    border-radius: 10px; }
+    border-radius: 10px;
+    border-style: solid; }
 
 .bodyRegistro .pasos h4 {
   font-family: 'Koulen', cursive;
@@ -605,7 +606,8 @@ body {
       padding: 0.3rem;
       color: #ffd000;
       text-align: center;
-      border-radius: 10px; }
+      border-radius: 10px;
+      border-style: solid; }
     .bodyRegistro .pasos p {
       text-align: left;
       background-color: rgba(0, 0, 0, 0.644);
