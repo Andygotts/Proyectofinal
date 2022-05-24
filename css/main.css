@@ -269,8 +269,7 @@ body {
       grid-area: carusel;
       margin: 3rem; }
       .mainInicio .carusel img {
-        height: 25rem;
-        width: 50rem; }
+        height: 30rem; }
     .mainInicio .primerTexto {
       grid-area: primer;
       margin-right: 3rem;
@@ -503,8 +502,7 @@ body {
       margin-top: 1rem;
       margin: 3rem 6rem; }
       .mercadoRuedas .carusel img {
-        height: 25rem;
-        width: 50rem; } }
+        height: 30rem; } }
 
 .bodyRegistro .vidRegis img {
   display: none; }
